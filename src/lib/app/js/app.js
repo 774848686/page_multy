@@ -1,0 +1,7 @@
+// 项目公共逻辑和方法
+
+const consoleLog = function (log) {
+  console.log(log)
+}
+
+export default consoleLog
