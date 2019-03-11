@@ -6,7 +6,7 @@ var config = require('../config/index.js');
 
 var webpackConfig = {
   output: {
-    filename: config.assetsSubDirectory + '/js/[name].[chunkhash:9].js',
+    filename: '[name].[chunkhash:9].js',
     path: config.assetsRoot,
     publicPath: config.build.assetsPublicPath
   },
@@ -15,12 +15,12 @@ var webpackConfig = {
       'process.env': config.build.env
     }),
     new ExtractTextPlugin({
-      filename: config.assetsSubDirectory + '/css/[name].[contenthash:9].css',
+      filename: '[name].[contenthash:9].css',
       allChunks: true
     }),
     new webpack.optimize.CommonsChunkPlugin({
       names: config.commonsChunkName,
-      filename: config.assetsSubDirectory + '/js/[name].[chunkhash:9].js',
+      filename: '/lib/[name].[chunkhash:9].js',
       minChunks: 3
     })
   ],

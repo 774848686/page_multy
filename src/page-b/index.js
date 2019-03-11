@@ -1,7 +1,7 @@
 import 'app/css/app.css'
-import './sub-page-b.css'
+import './index.css'
 import app from 'app/js/app.js'
 
-app('sub-page-b')
+app('page-b')
 
 console.log($('nav a').length)
