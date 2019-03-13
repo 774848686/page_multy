@@ -1,2 +1,0 @@
-webpackJsonp([0],{13:function(n,e,t){"use strict";t(1),t(7);var o=t(0);(0,function(n){return n&&n.__esModule?n:{default:n}}(o).default)("page-c"),console.log($("nav a").length)},7:function(n,e){}},[13]);
-//# sourceMappingURL=index.a8b522ed7.js.map

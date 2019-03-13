@@ -3,6 +3,7 @@ var webpackMerge = require('webpack-merge');
 var webpackBaseConfig = require('./webpack.base.config.js');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var config = require('../config/index.js');
+var Utils = require('../utils/utils.js');
 
 var webpackConfig = {
   output: {
@@ -27,7 +28,8 @@ var webpackConfig = {
   devServer: {
     clientLogLevel: 'none',
     noInfo: true,
-    overlay: true
+    overlay: true,
+    host:Utils.getIPAdress()
   },
   devtool: 'cheap-module-eval-source-map'
 };

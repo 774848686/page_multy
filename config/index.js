@@ -1,6 +1,6 @@
 var path = require('path');
 var fs = require('fs');
-var getFiles = require('../utils/utils.js');
+var utils = require('../utils/utils.js');
 var dirSrc = path.resolve(__dirname, '../src')
 
 // 单独处理项目首页
@@ -13,7 +13,7 @@ var entriesConfig = [
     template: path.resolve(dirSrc, 'index.html')
   }
 ];
-entriesConfig = entriesConfig.concat(getFiles(dirSrc));
+entriesConfig = entriesConfig.concat(utils.getFiles(dirSrc));
 module.exports = {
   entries: entriesConfig,
   assetsRoot: path.resolve(__dirname, '../dist'),

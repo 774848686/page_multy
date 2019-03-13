@@ -29,7 +29,7 @@ var webpackConfig = {
 
 if (process.env.NODE_ENV === 'production') {
   webpackConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    sourceMap: true
+    sourceMap: false
   }))
 }
 
